@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:p="http://primefaces.org/ui">
+    
+    <h:head>
+        <title>Come In</title>
+        <link rel="stylesheet" type="text/css" href="css/login.css"/>
+        <link rel="stylesheet" type="text/css" href="css/components.css"/>
+        <script type="text/javascript">
+            if( $.browser.msie ) {
+                alert('Besorg dir einen vernünftigen Browser du Kackbratze');
+                window.location.replace("https://www.google.com/intl/de/chrome/");
+            }
+        </script>
+    </h:head>
+    <h:body>
+        <div id="loginbox">
+                <div id="login">
+                    <center>
+                        <h1>LOGIN</h1>
+                        <p:messages id="messages" showDetail="true" autoUpdate="true" closable="true" />
+                        <p:panelGrid columns="2">
+                            <p:outputLabel value="Benutzername:"/>
+                            <p:inputText value=""/>
+                            <p:outputLabel value="Passwort:"/>
+                            <p:password value=""/>
+                            <p:outputLabel />
+                            <p:commandButton value="Login" action="index.xhtml" styleClass="loginButton" />
+                        </p:panelGrid>
+                    </center>
+                </div>
+            </div>
+    </h:body>
+</html>

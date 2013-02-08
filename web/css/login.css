@@ -1,0 +1,81 @@
+/* 
+    Document   : login
+    Created on : 07.02.2013, 10:21:59
+    Author     : TISCH2PC5
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+
+
+html, body {
+    display: block;
+    height: 100%;
+    background-image: linear-gradient(bottom, rgb(77,77,77) 0%, rgb(184,184,184) 41%);
+    background-image: -o-linear-gradient(bottom, rgb(77,77,77) 0%, rgb(184,184,184) 41%);
+    background-image: -moz-linear-gradient(bottom, rgb(77,77,77) 0%, rgb(184,184,184) 41%);
+    background-image: -webkit-linear-gradient(bottom, rgb(77,77,77) 0%, rgb(184,184,184) 41%);
+    background-image: -ms-linear-gradient(bottom, rgb(77,77,77) 0%, rgb(184,184,184) 41%);
+    background-image: -webkit-gradient(
+	linear,
+	left bottom,
+	left top,
+	color-stop(0, rgb(77,77,77)),
+	color-stop(0.5, rgb(184,184,184))
+    );
+    color: #2EB6FB;
+}
+
+h1 {
+    color: #CCCCCC;
+    text-shadow: #FFF 2px 2px 2px;
+    letter-spacing: 0px;
+    font-family: Tahoma;
+    font-size: 30px;
+    margin-top: 3px;
+}
+
+h1:first-letter {
+    font-size: 50px;
+}
+
+h3 {
+    margin-top: 2px;
+    text-shadow: #FFF 1px 1px 1px;
+}
+
+#loginbox {
+    height: 270px;
+    width:  400px;
+    background-image: linear-gradient(bottom, #FFF 0%, #E9E9E9 100%);
+    background-image: -o-linear-gradient(bottom, #FFF 0%, #E9E9E9 100%);
+    background-image: -moz-linear-gradient(bottom, #FFF 0%, #E9E9E9 100%);
+    background-image: -webkit-linear-gradient(bottom, #FFF 0%, #E9E9E9 100%);
+    background-image: -ms-linear-gradient(bottom, #FFF 0%, #E9E9E9 100%);
+    background: -webkit-gradient(linear,
+            left top, left bottom,
+            color-stop(0, #fff),
+            color-stop(0.5, #E9E9E9),
+            color-stop(1, #fff));
+    position: absolute;
+    left: 47%;
+    top: 30%;
+    margin: -100px 0 0 -150px;
+    border: #1E1E1E solid thin 1px;
+    box-shadow: 0px 0px 300px black; 
+    -moz-box-shadow: 0px 0px 300px black; 
+    -webkit-box-shadow: 0px 1px 300px #111, inset 1px 1px 6px #222;
+    -webkit-box-reflect: below 3px -webkit-gradient(
+	linear,
+	left bottom,
+	left top,
+	color-stop(0, rgba(255,255,255,0.5)),
+        color-stop(0.6, rgba(255,255,255,0)));
+/*    -webkit-box-reflect: below 2px -webkit-gradient(
+        radial, 100 100%, 0, 100 100%, 40, from(blue), to(#eef));*/
+}
+
+#login {
+    background-color: rgba(0, 0, 0, 0.0);
+}
+

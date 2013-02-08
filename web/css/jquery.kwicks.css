@@ -1,0 +1,102 @@
+/*!
+ *  Kwicks: Sexy Sliding Panels for jQuery - v2.0.0
+ *  http://devsmash.com/projects/kwicks
+ *
+ *  Copyright 2012 Jeremy Martin (jmar777)
+ *  Released under the MIT license
+ *  http://www.opensource.org/licenses/mit-license.php
+ */
+/*
+ *  This file contains styles that are common to all kwicks instances.  Note that each kwicks instance requires
+ *  additional styling - please see the examples for more info.
+ */
+.kwicks {
+	display: block;
+	list-style-type: none;
+        position: relative;
+	list-style: none;
+	padding: 0;
+}
+.kwicks > * {
+	display: block;
+	overflow: hidden;
+	padding: 0;
+}
+
+.kwicks > li {
+    width: 250px;
+    height: 125px;
+    /* overridden by kwicks but good for when JavaScript is disabled */
+    margin-right: 5px;
+    float: left;
+}
+
+#panel-1 { 
+    background-color: #2EB6FB; 
+    margin-right: 0px;
+}
+
+.kwicks.kwicks-processed > * {
+	margin: 0;
+	position: absolute;
+        
+}
+.kwicks-horizontal > * {
+        color: #fff;
+        text-height: 10px;
+        
+}
+.link:link{
+    filter: grayscale(1);
+    -webkit-filter: grayscale(1);
+    -moz-filter: grayscale(1);
+    -ms-filter: grayscale(1);
+    -o-filter: grayscale(1);
+    text-decoration: none;
+    -webkit-box-shadow: 0px 10px 200px #111, 0px -20px 100px #111, 20px 0px 70px #111, -20px 0px 70px #111, inset 1px 1px 6px #fff;
+
+}
+
+.link:hover {
+    filter: none;
+    -webkit-filter: grayscale(0);
+    -moz-filter: grayscale(0);
+    -ms-filter: grayscale(0);
+    -o-filter: grayscale(0);
+    text-decoration: none;
+    text-shadow: #C4C5C5 2px 2px 0px;
+    color: #fff;
+    -webkit-box-shadow: 0px 15px 50px #0D6AFF, 0px -20px 100px #0D6AFF, 20px 0px 70px #0D6AFF, -20px 0px 70px #0D6AFF, inset 1px 1px 6px #fff;
+}
+
+
+.icon {
+    font-size: large;
+    text-transform: uppercase;
+    text-height: 10px;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.icon img {
+    border: none;
+}
+
+
+.beschreibung {
+    font-size: large;
+    text-transform: uppercase;
+    text-height: 10px;
+    text-align: right;
+    padding-right: 5px;
+    letter-spacing: 2.5px;
+    text-shadow: #C4C5C5 2px 2px 0px;
+    color: #222;
+}
+
+.kwicks-horizontal > :first-child {
+	margin-right: 0;
+}
+.kwicks-vertical > :first-child {
+	margin-top: 0;
+}

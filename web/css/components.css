@@ -1,0 +1,24 @@
+/* 
+    Document   : components
+    Created on : 06.02.2013, 14:45:56
+    Author     : TISCH2PC5
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+root { 
+    display: block;
+}
+
+.ui-panelgrid td, tr, tbody{
+    background-color: rgba(0, 0, 0, 0.0) !important;
+    color: #2EB6FB !important;
+    border-style: hidden !important;
+    text-shadow: #FFF 1px 1px 1px;
+}
+
+.loginButton {
+    width: 210px;
+    height: 40px;
+}
+
