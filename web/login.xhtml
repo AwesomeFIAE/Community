@@ -19,18 +19,25 @@
     <h:body>
         <div id="loginbox">
                 <div id="login">
-                    <center>
-                        <h1>LOGIN</h1>
-                        <p:messages id="messages" showDetail="true" autoUpdate="true" closable="true" />
-                        <p:panelGrid columns="2">
-                            <p:outputLabel value="Benutzername:"/>
-                            <p:inputText value=""/>
-                            <p:outputLabel value="Passwort:"/>
-                            <p:password value=""/>
-                            <p:outputLabel />
-                            <p:commandButton value="Login" action="index.xhtml" styleClass="loginButton" />
-                        </p:panelGrid>
-                    </center>
+                    <h:form id="form">
+                        <center>
+                            <h1>LOGIN</h1>
+                            <div id="loginMessage">
+                                <p:messages id="messages" showDetail="false" autoUpdate="true" closable="true"/>
+                            </div>
+                            <p:panelGrid id="loginGrid" columns="3" style="top: 40px;">
+                                <p:outputLabel value="Benutzername:"/>
+                                <p:inputText id="user" value="" required="true" requiredMessage="Username überprüfen"/>
+                                <p:message id="userMessage" for="user" display="icon" /> 
+                                <p:outputLabel value="Passwort:"/>
+                                <p:password id="pass" value="" required="true" requiredMessage="Passwort überprüfen"/>
+                                <p:message id="passMessage" for="pass" display="icon" /> 
+                                <p:outputLabel />
+                                <p:commandButton value="Login" styleClass="loginButton" update="loginGrid" />
+                            </p:panelGrid>
+                               
+                        </center>
+                    </h:form>
                 </div>
             </div>
     </h:body>
